@@ -29,6 +29,10 @@ class Stack{
             return true
         }
     }
+    print(){
+        let aux = this.top
+        console.log(aux.element)
+    }
 }
 
 class Node{
@@ -37,7 +41,9 @@ class Node{
         this.prev = prev
     }
 }
+
 let novo = new Stack
+
 novo.push(20)
 novo.push(25)
 novo.push(30)
