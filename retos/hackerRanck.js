@@ -2,7 +2,7 @@
 const prompt = require("prompt-sync")({ sigint: true });
 let word1 = prompt("Ingresa la primer palabra: ")
 let word2 = prompt("Ingresa la segunda palabra: ")
-function intercalar_cadenas(pa1,pa2) {
+function newPassword(pa1,pa2) {
     let i = 0,j = 0
     let result = []
     while (i < pa1.length && j < pa2.length){
@@ -11,11 +11,9 @@ function intercalar_cadenas(pa1,pa2) {
         i += 1
         j += 1
     }
-    console.log(i)
-    console.log(j)
     result = result.concat(pa1.slice(i))
     result = result.concat(pa2.slice(j))
     return result.join('')
     
 }
-console.log(intercalar_cadenas(word1,word2))
+console.log(newPassword(word1,word2))
